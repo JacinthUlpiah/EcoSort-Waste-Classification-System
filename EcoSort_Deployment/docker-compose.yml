@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  ecosort-api:
-    build: ./backend
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./models:/app/models
