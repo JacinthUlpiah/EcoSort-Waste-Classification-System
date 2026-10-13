@@ -34,7 +34,7 @@ def upload_and_predict():
     
     try:
         with open(file_path, "rb") as f:
-            response = requests.post("http://localhost:8000/predict", files={"file": f})
+            response = requests.post("http://localhost:5000/predict", files={"file": f})
             
         if response.status_code == 200:
             data = response.json()
